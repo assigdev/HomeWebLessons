@@ -68,7 +68,7 @@ class Command(BaseCommand):
 
 ```python
 сity = City(*передаем данные всем полям кроме country code*)
-country_code = CountryCode.objects.get_or_create(code=code)  # get_or_create срабатывает как get() если такой объект есть и как create() если такого объекта нет.
+country_code, created = CountryCode.objects.get_or_create(code=code)  # get_or_create срабатывает как get() если такой объект есть и как create() если такого объекта нет.
 city.country_code = country_code
 city.save()
 ```
