@@ -40,6 +40,7 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = 'noreply@bytehouse.ru'     # впишите свою яндекс почту
 EMAIL_HOST_PASSWORD = 'password'     # пароль от вашей яндекс почты
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
 ADMINS = [('John', 'john@example.com'), ('Mary', 'mary@example.com')]  # напишите свою почту и имя
 ```    
 
